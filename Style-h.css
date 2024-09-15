@@ -14,3 +14,35 @@ body {
     background-repeat: no-repeat;
     background-color: #000000ee;
 }
+
+.gallery h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 60px;  /* Increased size */
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 250px;
+    max-height: 250px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.image-container div:hover img {
+    opacity: 1;
+}
+
+#description {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;  /* Increased size */
+    color: #5a5353;
+    text-align: center;
+    margin-top: 10px;
+}
