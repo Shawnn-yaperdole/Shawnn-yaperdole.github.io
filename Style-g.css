@@ -7,7 +7,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url('https://www.spurlock.illinois.edu/img-DB/recognition/Images15/2005.07.0014.jpg'); 
+    background-image: url('https://shawnn-yaperdole.github.io/ssibal/457383620_1034971587892775_1077676210735489845_n.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,15 +36,15 @@ body {
 }
 
 #displayed-image {
-    max-width: 60%;
-    max-height: 400px;
+    max-width: 100%;
+    max-height: 1000px;
     display: block;
 }
 
 
 #image-description {
     font-family: 'Serif'; 
-    font-size: 20px;
+    font-size: 40px;
     color: #333;
     margin-top: 10px;
     text-align: center;
