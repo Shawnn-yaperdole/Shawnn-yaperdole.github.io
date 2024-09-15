@@ -1,0 +1,24 @@
+.ssibbal {background-image: url("");
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    
+    display:;
+    place-content:;
+    text-align:;
+    min-height:;
+   
+    
+    position:;
+    isolation:;
+    }
+  .ssibbal::after{
+    content:;
+    position:;
+    z-index:;
+    inset:;
+    background:;
+    opacity:;
+  }
+  
+ 
