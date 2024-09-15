@@ -9,24 +9,41 @@
 
         <title>Cover of the Book</title>
     </head>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
     <body>
-        <h1>My Personal Website</h1>
-        <h2>Shawn Michael Sabela</h2>
-        <h3>The sole desire to learn and experience all that is to be offered, That is me. <br>The embodiment of curiosity, a Jack of all trades pushing to be an Ace of all trades</h3>
-        <p>
-            <button onclick="toggleSection('Information')">
-                About Me
-            </button>
-        <section id="AboutMe" class="hidden"></section>
-            <h1>Interests & Hobbies</h1>
-            <ul>
-                <br>As someone who is curious, I enjoy a lot of forms of art like music, painting, fashion, etc..</br>
-                <br>I also spend a lot of time on video games both online and offline.</br> 
-                <br>And if I am not playing games, I watch films or read books.</br>
-            </ul>    
-        </p>
+        <div class ="styler">
+            <h1>My Personal Website</h1>
+            <h2>Shawn Michael Sabela</h2>
+            <h3>The sole desire to learn and experience all that is to be offered, That is me. <br>The embodiment of curiosity, a Jack of all trades pushing to be an Ace of all trades</h3>
+            <p>
+                <button onclick="toggleSection('Information')">
+                    About Me
+                </button>
+            <section id="Information" class="hidden"></section>
+                <h1>Interests & Hobbies</h1>
+                <ul>
+                    <br>As someone who is curious, I enjoy a lot of forms of art like music, painting, fashion, etc..</br>
+                    <br>I also spend a lot of time on video games both online and offline.</br> 
+                    <br>And if I am not playing games, I watch films or read books.</br>
+                </ul>
+            </section>
+            <script>
+                function toggleSection(sectionId) {
+                  var section = document.getElementById(sectionId);
+                  if (section.style.display === 'none' || section.style.display === '') {
+                    section.style.display = 'block';
+                  } else {
+                    section.style.display = 'none';
+                  }
+                }
+              </script>
+            </p>
     </body>
-
+    
     <footer>
         <div id="Socials" class="tabcontent">
             <section class = "description">
