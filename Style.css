@@ -1,62 +1,131 @@
-.styler {background-image: url("");
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+.styler {
+    background-image: url("https://nexus.leagueoflegends.com/wp-content/uploads/2017/02/LOL_CMS_050_Article_01-1.jpg");
     background-position: center;
     background-attachment: scroll;
     background-size: cover;
-    
-    display:;
-    place-content:;
-    text-align:;
-    min-height:;
-   
-    
-    position:;
-    isolation:;
-    }
-  .styler::after{
-    content:;
-    position:;
-    z-index:;
-    inset:;
-    background:;
-    opacity:;
-  }
-  
-   
-  h1{font-size:;
-    color:;
-  
-   }
-  button{
-    font-weight:; 
-    font-size:;
-    background:;
-  }
-  h2{font-size:;
-    color:;
-    text-align:;
-  }
-  h3{
-    font-size:;
-    line-height:;
-    color:;
-    text-align:;
-    place-content:;
-    
-  }
-  h4{
-    font-size:;
-    line-height:;
-    color:;
-    padding:;
-     border-left:;
-  }
-  ul{
-    font-size:;
-    line-height:;
-    color:;
-  }
-  ul2{
-    text-decoration:;
-    color:;
-  }
- 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    isolation: isolate;
+    color: #B0B0B0; /* Changed to greyish color */
+}
+
+.styler::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: black;
+    opacity: 0.4;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Dancing Script', cursive;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 60px;  /* Increased size */
+    color: #B0B0B0;  /* Changed to greyish color */
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;  /* Increased size */
+    color: #B0B0B0;  /* Changed to greyish color */
+}
+
+h3 {
+    font-size: 30px;  /* Increased size */
+    line-height: 1.5;
+    color: #B0B0B0;  /* Changed to greyish color */
+}
+
+h4 {
+    font-size: 25px;  /* Increased size */
+    line-height: 1.5;
+    color: #B0B0B0;  /* Changed to greyish color */
+    padding: 10px;
+    border-left: 6px solid red;
+}
+
+button {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 25px;  /* Increased size */
+    background: #020D45;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;  /* Adjusted padding for larger font */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #030F6F;
+    transform: scale(1.05);
+}
+
+ul {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;  /* Increased size */
+    line-height: 1.5;
+    color: #B0B0B0;  /* Changed to greyish color */
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 15px;  /* Increased space between items */
+    transition: color 0.3s, transform 0.3s;
+}
+
+ul li:hover {
+    color: #A9A9A9;  /* Slightly darker grey on hover */
+    transform: translateX(10px);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.icons img {
+    transition: transform 0.3s, filter 0.3s;
+    margin: 10px;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.hidden {
+    display: none;
+}
+
+section {
+    transition: opacity 0.5s ease-in-out;
+}

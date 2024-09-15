@@ -1,54 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href "Style.css">
-
-
-        <title>Cover of the Book</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+    <title>Cover of the Book</title>
     <style>
         .hidden {
             display: none;
         }
     </style>
-    <body>
-        <div class ="styler">
-            <h1>My Personal Website</h1>
-            <h2>Shawn Michael Sabela</h2>
-            <h3>The sole desire to learn and experience all that is to be offered, That is me. <br>The embodiment of curiosity, a Jack of all trades pushing to be an Ace of all trades</h3>
-            <p>
-                <button onclick="toggleSection('Information')">
-                    About Me
-                </button>
-            <section id="Information" class="hidden"></section>
-                <h1>Interests & Hobbies</h1>
-                <ul>
-                    <br>As someone who is curious, I enjoy a lot of forms of art like music, painting, fashion, etc..</br>
-                    <br>I also spend a lot of time on video games both online and offline.</br> 
-                    <br>And if I am not playing games, I watch films or read books.</br>
-                </ul>
-            </section>
-            <script>
-                function toggleSection(sectionId) {
-                  var section = document.getElementById(sectionId);
-                  if (section.style.display === 'none' || section.style.display === '') {
-                    section.style.display = 'block';
-                  } else {
-                    section.style.display = 'none';
-                  }
-                }
-              </script>
-            </p>
-    </body>
-    
+</head>
+<body>
+    <div class="styler">
+        <h1>My Personal Website</h1>
+        <h2>Shawn Michael Sabela</h2>
+        <h3>The sole desire to learn and experience all that is to be offered, That is me. <br>The embodiment of curiosity, a Jack of all trades pushing to be an Ace of all trades</h3>
+        <p>
+            <button onclick="toggleSection()">About Me</button>
+        </p>
+        <section id="interests-hobbies" class="hidden">
+            <h1>Interests & Hobbies</h1>
+            <ul>
+                <li>As someone who is curious, I enjoy a lot of forms of art like music, painting, fashion, etc.</li>
+                <li>I also spend a lot of time on video games both online and offline.</li>
+                <li>And if I am not playing games, I watch films or read books.</li>
+            </ul>
+        </section>
+    </div>
     <footer>
         <div id="Socials" class="tabcontent">
-            <section class = "description">
+            <section class="description">
                 <h4>Ways to Contact Me:</h4>
-            
                 <div class="icons">
                     <img src="https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-04-512.png" alt="igimage" width="50" height="50">
                     <img src="https://cdn.icon-icons.com/icons2/3398/PNG/512/circle_facebook_logo_icon_214753.png" alt="fbimage" height="50" width="50">
@@ -56,4 +40,15 @@
             </section>
         </div>
     </footer>
+    <script>
+        function toggleSection() {
+            var section = document.getElementById('interests-hobbies');
+            if (section.classList.contains('hidden')) {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
 </html>
