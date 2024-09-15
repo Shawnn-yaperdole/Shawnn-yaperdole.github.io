@@ -1,4 +1,4 @@
-.ssibbal {background-image: url("");
+.styler {background-image: url("");
     background-position: center;
     background-attachment: scroll;
     background-size: cover;
@@ -12,7 +12,7 @@
     position:;
     isolation:;
     }
-  .ssibbal::after{
+  .styler::after{
     content:;
     position:;
     z-index:;
@@ -21,4 +21,42 @@
     opacity:;
   }
   
+   
+  h1{font-size:;
+    color:;
+  
+   }
+  button{
+    font-weight:; 
+    font-size:;
+    background:;
+  }
+  h2{font-size:;
+    color:;
+    text-align:;
+  }
+  h3{
+    font-size:;
+    line-height:;
+    color:;
+    text-align:;
+    place-content:;
+    
+  }
+  h4{
+    font-size:;
+    line-height:;
+    color:;
+    padding:;
+     border-left:;
+  }
+  ul{
+    font-size:;
+    line-height:;
+    color:;
+  }
+  ul2{
+    text-decoration:;
+    color:;
+  }
  
